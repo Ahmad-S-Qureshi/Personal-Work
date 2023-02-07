@@ -43,7 +43,6 @@ def main():
     turnStartTime = datetime.now().timestamp()
     gameGoing = True
     score = 0
-    
     # Game loop
     while True:
         for event in pygame.event.get():
@@ -68,7 +67,6 @@ def main():
                     letters = turnReset(background, screen, font, BACKGROUNDCOLOR)
                     pygame.display.flip()
                     
-
                 # Updates Health Values based on button pressed and strikes-through letters when pressed
                 elif(not(letters[0] == " ")):
                     if(keyboardState[ord(letters[0])+32] and (not(lettersPressed[0]))):
@@ -88,8 +86,7 @@ def main():
                         background.blit(FailedSymbol, FailedSymbolPos)
                         screen.blit(background, (0,0))
                         pygame.display.flip()
-                        
-                    
+                                  
         # Waits for the delay between moves to elapse and updates time before the next attack
         if(not(opening) and (gameGoing)):
             # Runs after turn timer
@@ -160,7 +157,6 @@ def main():
                 playerHealthColor = [0,0,255]
                 enemyHealthColor = [0,0,255]
                 pygame.display.flip()
-
 
 # Returns the inputted box but shorter to account for damage 
 def updateHealth(background, surface, box, change, color, screenHeight):
