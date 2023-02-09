@@ -30,6 +30,14 @@ def main():
     enemyHealthPos = Rect(screen.get_size()[0]-60, 30, 30, screen.get_size()[1]//255*255)
     enemyHealthColor = [0, 0, 255]
     BASEENEMYPOS = Rect(screen.get_size()[0]-60, 30, 30, screen.get_size()[1]//255*255)
+    
+    # Prepare text for player health
+    playerHealthText = font.render("17/17", 1, playerHealthColor, background)
+
+    # Prepare text for enemy health
+    enemyHealthPos = Rect(screen.get_size()[0]-60, 30, 30, screen.get_size()[1]//255*255)
+    enemyHealthColor = [0, 0, 255]
+    BASEENEMYPOS = Rect(screen.get_size()[0]-60, 30, 30, screen.get_size()[1]//255*255)
 
     # Display everything for the screen
     screen.blit(background, (0, 0))
