@@ -4,5 +4,25 @@
 #include <limits.h>
 #include <stdlib.h>
 int main() {
+    FILE* currFile = fopen("numbers.txt", "r");
+    int val;
+    int total;
+    char c;
+    c = fgetc(currFile);
+    printf("The set of oblong numbers is 2, ");
+    while(c != EOF) {
+        if(c !=' '){
+            total *= 10;
+            total += c-48;
+        } else {
+            
+            if((int)(sqrt(total)) * ((int)(sqrt(total))+1) == total){
+                printf("%d, ", total);
+            }
+            total = 0;
+        }
+
+        c = fgetc(currFile);
+    }
     
 }
