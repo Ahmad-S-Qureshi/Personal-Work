@@ -1,49 +1,76 @@
 #include <math.h>
 #include <stdio.h>
 
-char board[9][9];
-int boardComplete[9];
-int printBigBoard() {
-    for(int i = 0; i <20; i++) {
-        printf("\n");
-    }
-    for(int i = 0; i < 9; i++) {
-        for(int j = 0; j < 9; j++) {
-            if(j%3==0 && j>0) {
-                printf("| ");
+void initBoard(char board[][3][3][3]) {
+   // initialize all elements to space character
+   for(int i=0; i<3; i++) {
+      for(int j=0; j<3; j++) {
+         for(int k=0; k<3; k++) {
+            for(int l=0; l<3; l++) {
+               board[i][j][k][l] = ' ';
             }
-            printf("%c ", board[i][j]);
-        }
-        printf("\n");
-        if(i%3 == 2 && i < 8) {
-            printf("------+-------+-----\n");
-        } 
-    }
-    
+         }
+      }
+   }
 }
-int main() {
-    int players;
-    printf("Welcome to ultimate tic-tac-toe\n");
-    printf("For the purposes of this game, all boards will look like this:\n");
-    printf("1 | 2 | 3\n4 | 5 | 6\n7 | 8 | 9\nInput any key to continue\n");
-    scanf("%d", &players);
-    printf("\n");
-    for(int i = 0; i < 9; i++) {
-        for(int j = 0; j < 9; j++) {
-            board[i][j] = ' ';
-        }
-    }
-    char player = 'x';
-    printf("Player %c, select what board you want to play in")
-    while(1) {
-        int end;
-        char player = 'x';
-        printBigBoard();
 
-        printf("\n\nEnter 0 to continue and 1 to end: ");
-        scanf("%d", &end);
-        if(end == 1) {
-            return 1;
+void displayBoard(char board[][3][3][3]) {
+   printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+   int loopOuter = 0;
+   int loopInner = 0;
+   int currChar = 0;
+   for(int i=0; i<3; i++) {
+      for(int j=0; j<3; j++) {
+         for(int k=0; k<3; k++) {
+            for(int l=0; l<3; l++) {
+               if(currChar%3 == 0 && currChar>0) {
+                printf("| ");
+               }
+               currChar++;
+               printf("%c ", board[i][k][j][l]);
+            }
+            if(loopInner%3==2) {
+                printf("\n");
+                currChar = 0;
+            }
+            loopInner++;
+         }
+        if(loopOuter%3 ==2) {
+            //printf("\n");
+            if(loopOuter<7) {
+                printf("------+-------+------\n");
+            }
+
+        }
+        loopOuter++;
+      }
+   }
+}
+
+int main() {
+   char board[3][3][3][3];
+
+   // initialize the array using the initBoard function
+   initBoard(board);
+
+   // print the array and start the game
+   int inputBoard;
+   int inputSquare;
+   char player = 'X';
+    while(1) {
+        displayBoard(board);
+        printf("\nSelect which board you want to do your turn in using the following pattern of a board (0 to end)\n1|2|3\n4|5|6\n7|8|9\n");
+        scanf("%d", &inputBoard);
+        if(inputBoard == 0) {
+            return 0;
+        }
+        printf("\nSelect which square you want to do your turn in using the following pattern of a board \n1|2|3\n4|5|6\n7|8|9\n");
+        scanf("%d", &inputSquare);
+        board[(inputBoard-1)/3][(inputBoard-1)%3][(inputSquare-1)/3][(inputSquare-1)%3] = player;
+        if(player=='X') {
+         player = 'O';
+        } else {
+         player = 'X';
         }
     }
 }
