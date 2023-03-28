@@ -201,12 +201,15 @@ def grandReset(background, BACKGROUNDCOLOR, screen, font, opening):
     enemyHealthPos = Rect(screen.get_size()[0]-60, 30, 30, screen.get_size()[1]//255*255)
     pygame.draw.rect(background, ((0, 0, 255)), playerHealthPos)
     pygame.draw.rect(background, (0, 0, 255), enemyHealthPos)
+    drawText("Player Health", background, font, 60, screen.get_size()[1]/2 - 100, screen)
+    drawText("Enemy Health", background, font, screen.get_size()[0]  /8*7, screen.get_size()[1]/2 - 100, screen)
     if(not opening):
         drawCenteredText("Wait a moment!", background, font, screen.get_size()[1]-80, screen)
     else:
         print("first reset")
     letters = updateLetters()
     screen.blit(background, (0,0))
+
     return letters
 
 # Draws a set of centered instructions for use in the starting and game over screens
@@ -223,6 +226,14 @@ def drawCenteredText(text, background, font, height, screen):
     tempTextPos = Rect(0, height, tempTextRect.w, tempTextRect.h)
     centerXPos = background.get_rect().centerx
     tempTextPos.centerx = centerXPos
+    background.blit(tempText, tempTextPos)
+    screen.blit(background, (0,0))
+
+# Draws text using a top-right coordinate
+def drawText(text, background, font, x, y, screen):
+    tempText = font.render(text, 1, (180, 180, 180))
+    tempTextRect = tempText.get_rect()
+    tempTextPos = Rect(x, y, tempTextRect.w, tempTextRect.h)
     background.blit(tempText, tempTextPos)
     screen.blit(background, (0,0))
     
