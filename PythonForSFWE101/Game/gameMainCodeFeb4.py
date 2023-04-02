@@ -46,13 +46,15 @@ def main():
     # Game loop
     while True:
         for event in pygame.event.get():
+            # Closes script for X or alt+f4
             if event.type == QUIT:
                 return
             if event.type == KEYDOWN and gameGoing:
                 keyboardState = pygame.key.get_pressed()
                 # Closes game if user hits delete (Developmental Artifact)
                 if(keyboardState[127]):
-                    return
+                    # return
+                    pass
                 # Runs on the first button press and sets up the background and whatnot, also changes the flag of opening to false
                 elif(opening and keyboardState[65+32]):
                     letters = grandReset(background, BACKGROUNDCOLOR, screen, font, opening)
@@ -119,7 +121,8 @@ def main():
                             FailedSymbol.fill(BACKGROUNDCOLOR)
                             background.blit(FailedSymbol, FailedSymbolPos)
                         except: 
-                            print("No mess up yet")
+                            pass
+                            #print("No mess up yet")
                         screen.blit(background, (0,0))
                         pygame.display.flip()
                     else: #Displays end screen if user health has completely drained
@@ -143,7 +146,8 @@ def main():
                     pygame.display.flip()
                     turnStartTime = datetime.now().timestamp()
                     turnPassed = True
-        elif((not gameGoing)): # Runs reset feature if A is pressed on game over screen
+        # Runs reset feature if A is pressed on game over screen
+        elif((not gameGoing)): 
             keyboardState = pygame.key.get_pressed()
             if(keyboardState[65+32]):
                 letters = updateLetters()
@@ -201,8 +205,8 @@ def grandReset(background, BACKGROUNDCOLOR, screen, font, opening):
     enemyHealthPos = Rect(screen.get_size()[0]-60, 30, 30, screen.get_size()[1]//255*255)
     pygame.draw.rect(background, ((0, 0, 255)), playerHealthPos)
     pygame.draw.rect(background, (0, 0, 255), enemyHealthPos)
-    drawText("Player Health", background, font, 60, screen.get_size()[1]/2 - 100, screen)
-    drawText("Enemy Health", background, font, screen.get_size()[0]  /8*7, screen.get_size()[1]/2 - 100, screen)
+    drawText("Player Health", background, font, 75, screen.get_size()[1]/2 - 100, screen)
+    drawText("Enemy Health", background, font, screen.get_size()[0] - 250, screen.get_size()[1]/2 - 100, screen)
     if(not opening):
         drawCenteredText("Wait a moment!", background, font, screen.get_size()[1]-80, screen)
     else:
@@ -218,6 +222,8 @@ def drawInstructions(background, font, screen):
     drawCenteredText("You will be given an increasingly smaller amount of time to press 3 buttons in order to attack ", background, font, 40, screen)
     drawCenteredText("Should you fail to press all three, you will lose health", background, font, 80, screen)
     drawCenteredText("You do not need to press them at the same time, just press them", background, font, 120, screen)
+    drawCenteredText("Upon defeating an enemy, a new one will spawn and you will have less time between attacks", background, font, 160, screen)
+    drawCenteredText("Try to complete as many attacks as possible", background, font, 200, screen)
 
 # Draws centered text a bit less painfully
 def drawCenteredText(text, background, font, height, screen):
