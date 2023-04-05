@@ -1,0 +1,11 @@
+WebbPeak       14784   9120  9960
+BakerCanyon    15312   5840  9000
+FryeCanyon     14784   5350  7120
+Arcadia        26928   6700  9500
+GrantCreek     29040   5520  8895
+Deadman        17952   4560  6280
+Holdout         6336   5300  7200
+Ashcreek       43296   4200  9440
+Tortilla       43296   5000  6000
+Powers         46992   4660  5280
+ 

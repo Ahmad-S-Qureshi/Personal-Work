@@ -202,6 +202,8 @@ def grandReset(background, BACKGROUNDCOLOR, screen, font, opening):
     pygame.draw.rect(background, ((0, 0, 255)), playerHealthPos)
     pygame.draw.rect(background, (0, 0, 255), enemyHealthPos)
     if(not opening):
+        drawText("Player Health", background, font, 60, screen.get_size()[1]/2 - 100, screen)
+        drawText("Enemy Health", background, font, screen.get_size()[0]  /8*7, screen.get_size()[1]/2 - 100, screen)
         drawCenteredText("Wait a moment!", background, font, screen.get_size()[1]-80, screen)
     else:
         print("first reset")
@@ -225,6 +227,8 @@ def drawCenteredText(text, background, font, height, screen):
     tempTextPos.centerx = centerXPos
     background.blit(tempText, tempTextPos)
     screen.blit(background, (0,0))
+    
+
     
 # Covers text to prepare for new set of letters and updates bottom edge damage indicators
 def drawBottomTextCover(background, screen, BACKGROUNDCOLOR):

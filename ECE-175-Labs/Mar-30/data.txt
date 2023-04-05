@@ -1,0 +1,10 @@
+WebbPeak	7.23	Easy
+BakerCanyon	33.42	Extreme
+FryeCanyon	19.90	Difficult
+Arcadia	20.85	Difficult
+GrantCreek	26.66	Very Difficult
+Deadman	19.01	Difficult
+Holdout	32.79	Extreme
+Ashcreek	38.86	Extreme
+Tortilla	6.80	Easy
+Powers	4.19	Easy
