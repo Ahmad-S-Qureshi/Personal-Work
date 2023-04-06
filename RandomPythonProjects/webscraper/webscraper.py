@@ -19,7 +19,7 @@ def get_images():
             word, definition = random.choice(list(english_dict.items()))
         queries.append(word)
     #queries = ["lemon", "dog", "beach"]
-    queries = ["lemon", "mango", "pineapple"]
+    queries = ["kangaroo"]
     print(queries)
     for query in queries:
         print("Starting query " + query)
