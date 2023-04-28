@@ -49,7 +49,7 @@ void displayBoard(char board[][3][3][3]) {
 
 int main() {
    char board[3][3][3][3];
-
+   
    // initialize the array using the initBoard function
    initBoard(board);
 

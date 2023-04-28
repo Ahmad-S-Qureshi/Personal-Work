@@ -5,7 +5,7 @@ import time
 import sys
 import os
 
-sys.stderr = open(os.devnull, "w")
+#sys.stderr = open(os.devnull, "w")
 
 
 # The main function that will handle connection and communication 
@@ -18,8 +18,16 @@ async def listen():
     async with websockets.connect(url, ping_interval = 1) as ws:
         # Send a greeting message
         first_connected = False
+        
         while(True):
             if(not first_connected):
+                await ws.send("Hello! I am " + input("Enter your in-game name: "))
+                msg = await ws.recv()
+                while msg == "Name already in use, try a different name":
+                    print(msg)
+                    await ws.send("Hello! I am " + input("Enter your in-game name: "))
+                    msg = await ws.recv()
+                name = msg.split(" ")[1][0:-1]
                 msg = await ws.recv()
                 print(msg)
                 first_connected = True

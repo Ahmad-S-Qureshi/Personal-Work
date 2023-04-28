@@ -4,7 +4,7 @@ import socket
 import os
 import sys
 
-sys.stderr = open(os.devnull, "w")
+#sys.stderr = open(os.devnull, "w")
 
 def get_ip():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -17,6 +17,12 @@ def get_ip():
     finally:
         s.close()
     return IP
+
+def search_for_player(list_connected, player_target):
+    for player in list_connected:
+        if player[1]==player_target:
+            return player
+    raise NameError("Player not found")
 
 # Server data
 PORT = (int)(4206.9)
@@ -34,13 +40,25 @@ async def echo(websocket, path):
     print("A client just connected")
     await websocket.send("Successfully connected!")
     # Store a copy of the connected client
-    connected.add(websocket)
     # Handle incoming messages
     usableInputs = ["rock", "paper", "scissors"]
     global playerOneTurn
     try:
         async for message in websocket:
-            if(message not in usableInputs):
+            if(message[0:6] == "Hello!"):
+                tokens = message.split(" ")
+                name = tokens[len(tokens) - 1]
+                print(f"got hello message with name {name}")
+                try:
+                    search_for_player(connected, name)
+                    await websocket.send("Name already in use, try a different name")
+                except NameError as e:
+                    connected.append([websocket, name])
+                    print(f"stored player {name}")
+                    print("sending welcome message")
+                    await websocket.send(f"Welcome {name}!")
+            
+            elif(message not in usableInputs):
                 await websocket.send("Invalid Input")
                 
             else:

@@ -1,10 +1,16 @@
 #include <stdio.h>
-int function() {
-    return ('a' == 'a');
-}
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
+
 int main() {
-    if(function()) {
-        printf("lemon\n");
+    char word[100];
+    strcpy(word, "test word");
+    for(int i = 0; i<strlen(word); i++) {
+        printf("%c", word[i]);
+        sleep(1);
+        fflush(stdout);
+        
     }
-    return 0;
+    printf("\n");
 }
