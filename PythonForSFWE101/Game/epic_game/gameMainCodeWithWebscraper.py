@@ -1,17 +1,18 @@
 import pygame
 from pygame.locals import *
-import random
+from random import randrange, choice
 from datetime import datetime
-import os
+from os import listdir, path, curdir, remove
 from time import sleep
 from threading import Thread
 from webscraper import get_images
 from PIL import Image
 
 def main():
+    # Grabs pictures for use as the enemy
     imageGrabber = Thread(target=get_images, daemon=True)
     imageGrabber.start()
-    while(len(os.listdir(os.path.join(os.curdir, "images")))<1):
+    while(len(listdir(path.join(curdir, "images")))<1):
         sleep(0.5)
 
     # Initialise screen and display game name
@@ -58,9 +59,11 @@ def main():
     # Game loop
     while True:
         for event in pygame.event.get():
+            
+            # Handles closing the window and removes all downloaded images
             if event.type == QUIT:
-                for file in os.listdir(os.path.join(os.curdir, "images")):
-                    os.remove(os.path.join(os.curdir, "images", file))
+                for file in listdir(path.join(curdir, "images")):
+                    remove(path.join(curdir, "images", file))
                 return
             if event.type == KEYDOWN and gameGoing:
                 keyboardState = pygame.key.get_pressed()
@@ -69,31 +72,48 @@ def main():
                     return
                 # Runs on the first button press and sets up the background and whatnot, also changes the flag of opening to false
                 elif(opening and keyboardState[65+32]):
+                    
+                    # Resets everything and sets letters to some random ones
                     letters = grandReset(background, BACKGROUNDCOLOR, screen, font, opening, imageSurface)
+                    
+                    # Sets game running booleans
                     opening = False
                     gameGoing = True
+
+                    # Initializes time between turns (hard-coded at 3 seconds)
                     timeBetweenTurns = 3
+
+                    # Sets all starting colors to 
                     playerHealthColor = [0,0,255]
                     enemyHealthColor = [0,0,255]
+
+                    # Stores starting time for later use and for use between turns
                     turnStartTime = datetime.now().timestamp()
+
+                    # Sets score to zero for start
                     score = 0
-                    pygame.display.flip()
+                    
+                    # Runs code for turn resetting 
                     letters = turnReset(background, screen, font, BACKGROUNDCOLOR)
                     pygame.display.flip()
                     
                 # Updates Health Values based on button pressed and strikes-through letters when pressed
                 elif(not opening):
                     if(not(letters[0] == " ")):
+
+                        # Checks if input is the first letter
                         if(keyboardState[ord(letters[0])+32] and (not(lettersPressed[0]))):
                             onLetterPress(lettersPressed, 1, background, screen, font)
 
+                        # Checks if input is the second letter
                         elif(keyboardState[ord(letters[1])+32] and (not(lettersPressed[1]))):
                             onLetterPress(lettersPressed, 2, background, screen, font)
 
+                        # Checks if input is the third letter
                         elif(keyboardState[ord(letters[2])+32] and (not(lettersPressed[2]))):
                             onLetterPress(lettersPressed, 3, background, screen, font)
 
-                    # Displays a flag to the user that the turn has failed
+                    # Displays a flag to the user that the turn has failed (NYI)
                     else:
                         turnPassed = False
                         FailedSymbol = font.render("Turn Failed", 9, (255, 30, 30))
@@ -106,17 +126,21 @@ def main():
         if(not(opening) and (gameGoing)):
             # Runs after turn timer
             if(turnStartTime + timeBetweenTurns < datetime.now().timestamp()):
+
                 # Performs Turn, takes health from user if turn was failed and takes enemy health otherwise
                 if(lettersPressed[0] and lettersPressed[1] and lettersPressed[2] and turnPassed):
                     if(enemyHealthColor[2]-40 >0):
                         enemyHealthPos = updateHealth(screen, background, enemyHealthPos, 40, BACKGROUNDCOLOR, screen.get_size()[1])
                         pygame.draw.rect(background, BACKGROUNDCOLOR, BASEENEMYPOS)
                         enemyHealthColor = [enemyHealthColor[0]+40, 0, enemyHealthColor[2]-40]
-                    else: # If enemy health is gone, resets enemy
+
+                    # If enemy health is gone, resets enemy
+                    else: 
                         enemyHealthPos = Rect(screen.get_size()[0]-60, 30, 30, screen.get_size()[1]//255*255)
                         enemyHealthColor = [0, 0, 255]
                         timeBetweenTurns = timeBetweenTurns * 0.85
                         drawEnemy(background, screen, BACKGROUNDCOLOR, imageSurface)
+
                     # Updates enemy health bar whether or not they were reset and draws to screen
                     pygame.draw.rect(background, enemyHealthColor, enemyHealthPos)
                     score = score + 1
@@ -124,11 +148,14 @@ def main():
                     pygame.display.flip()
                     
                 else:
-                    if(playerHealthColor[2] - 15 > 0): # Takes user health if turn was failed
+
+                    # Takes user health if turn was failed
+                    if(playerHealthColor[2] - 15 > 0): 
                         playerHealthPos = updateHealth(screen, background, playerHealthPos, 15, BACKGROUNDCOLOR, screen.get_size()[1])
                         playerHealthColor = [playerHealthColor[0]+15, 0, playerHealthColor[2]-15]
                         pygame.draw.rect(background, BACKGROUNDCOLOR, BASEPLAYERPOS)
                         pygame.draw.rect(background, playerHealthColor, playerHealthPos)
+                        
                         # Resets turn failed flag if a turn has been failed at this point, display no mess up yet otherwise
                         try:
                             FailedSymbol.fill(BACKGROUNDCOLOR)
@@ -137,10 +164,14 @@ def main():
                             print("No mess up yet")
                         screen.blit(background, (0,0))
                         pygame.display.flip()
-                    else: #Displays end screen if user health has completely drained
+
+                    #Displays end screen if user health has completely drained
+                    else: 
                         background.fill((30, 30, 30))
                         gameGoing = False
                         drawInstructions(background, font, screen)
+
+                        # Tells the user how to play again
                         drawCenteredText("Your score was " +str(score) +" press A to play again", background, font, screen.get_size()[1]-80, screen)
                         screen.blit(background, (0, 0))
                         pygame.display.flip()
@@ -155,23 +186,45 @@ def main():
                         background.blit(FailedSymbol, FailedSymbolPos)
                     except: 
                         print("No mess up yet")
+
+                    # Resets flags and booleans for between turns
                     pygame.display.flip()
                     turnStartTime = datetime.now().timestamp()
                     turnPassed = True
-        elif((not gameGoing)): # Runs reset feature if A is pressed on game over screen
+
+        # Runs reset feature if A is pressed on game over screen
+        elif((not gameGoing)): 
+            # Grabs all pressed letters
             keyboardState = pygame.key.get_pressed()
+
+            # Checks for letter A
             if(keyboardState[65+32]):
+                # Resets letters
                 letters = updateLetters()
+
+                # Resets all variables and screen
                 letters = grandReset(background, BACKGROUNDCOLOR, screen, font, opening, imageSurface)
+
+                # Resets health
                 playerHealthColor = [0,0,270]
+
+                # Updates boolean to say game is going
                 gameGoing = True
+
+                # Resets turn timer
                 timeBetweenTurns = 3
                 turnStartTime = datetime.now().timestamp()
+
+                # Resets score
                 score = 0
+
+                # Resets player and enemy health
                 playerHealthPos.height = screen.get_size()[1]//255*255
                 enemyHealthPos.height = screen.get_size()[1]//255*255
                 playerHealthColor = [0,0,255]
                 enemyHealthColor = [0,0,255]
+
+                # Updates the screen
                 pygame.display.flip()
 
 # Returns the inputted box but shorter to account for damage 
@@ -190,18 +243,30 @@ def resetHealth(background, surface, box, screenHeight):
 
 # Returns a new set of random letters
 def updateLetters():
+    # temp array to hold letters
     temp = [" ", " ", " "]
-    temp[0] = chr(random.randrange(65, 91))
-    temp[1] = chr(random.randrange(65, 91))
-    temp[2] = chr(random.randrange(65, 91))
+
+    # Each position in array is updated
+    temp[0] = chr(randrange(65, 91))
+    temp[1] = chr(randrange(65, 91))
+    temp[2] = chr(randrange(65, 91))
+
+    # returns temp array
     return temp  
 
 # Resets values and dispalys new letters for new turn
 def turnReset(background, screen, font, BACKGROUNDCOLOR):
+    # Covers the last tuen
     drawBottomTextCover(background, screen, BACKGROUNDCOLOR)
+
+    # Updates letters and displays the new letters to print
     letters = updateLetters()
     drawCenteredText("Press the " + letters[0] + " " + letters[1] + " " + letters[2] + " keys", background, font, screen.get_size()[1]-80, screen)
+
+    # blits everything to screen
     screen.blit(background, (0, 0))
+
+    # Returns the letters for future use
     return letters
 
 # Resets pressed keys
@@ -210,18 +275,31 @@ def resetPressed():
 
 # Resets when new game is started, displaying text and a quick "wait" for the next turn
 def grandReset(background, BACKGROUNDCOLOR, screen, font, opening, imageSurface):
+    # Covers screen in background color
     background.fill(BACKGROUNDCOLOR)
+
+    # Draws enemy for future use
     drawEnemy(background, screen, BACKGROUNDCOLOR, imageSurface)
+
+    # Draws enemy and player health (the //255 is to ensure that the size is divisible by 255 for all screen sizes)
     playerHealthPos = Rect(30, 30, 30, screen.get_size()[1]//255*255)
     enemyHealthPos = Rect(screen.get_size()[0]-60, 30, 30, screen.get_size()[1]//255*255)
+
+    # Draws health bars
     pygame.draw.rect(background, ((0, 0, 255)), playerHealthPos)
     pygame.draw.rect(background, (0, 0, 255), enemyHealthPos)
+
+    # Draws text for health bars
     drawText("Player Health", background, font, 60, screen.get_size()[1]/2 - 100, screen)
     drawText("Enemy Health", background, font, screen.get_size()[0]-250, screen.get_size()[1]/2 - 100, screen)
+
+    # Displays to the user to eait for the game to load
     if(not opening):
         drawCenteredText("Wait a moment!", background, font, screen.get_size()[1]-80, screen)
     else:
         print("first reset")
+    
+    # resets letters and sends the background to the screen
     letters = updateLetters()
     screen.blit(background, (0,0))
 
@@ -236,15 +314,21 @@ def drawInstructions(background, font, screen):
 
 # Draws centered text a bit less painfully
 def drawCenteredText(text, background, font, height, screen):
+
+    # Renders text onto a pygame rect object at the height of the input
     tempText = font.render(text, 1, (180, 180, 180))
     tempTextRect = tempText.get_rect()
     tempTextPos = Rect(0, height, tempTextRect.w, tempTextRect.h)
+
+    # Grabs the center X-value of the screen
     centerXPos = background.get_rect().centerx
     tempTextPos.centerx = centerXPos
     background.blit(tempText, tempTextPos)
+
+    # Updates the screen with text
     screen.blit(background, (0,0))
 
-# Draws text using a top-right coordinate
+# Draws text using a top-right coordinate but does not center the text
 def drawText(text, background, font, x, y, screen):
     tempText = font.render(text, 1, (180, 180, 180))
     tempTextRect = tempText.get_rect()
@@ -258,19 +342,25 @@ def drawBottomTextCover(background, screen, BACKGROUNDCOLOR):
     cover = pygame.draw.rect(background, BACKGROUNDCOLOR, cover)
     screen.blit(screen, cover)
 
+# Draws Enemy using images from the webscraper
 def drawEnemy(background, screen, BACKGROUNDCOLOR, imageSurface):
     imageSurface.fill(BACKGROUNDCOLOR)
     backgroundLoaded = False
     imageLoaded = False
+
+    # Prints if and when the images are being loaded
     print("loading background")
     while(not backgroundLoaded):
         while(imageLoaded == False):
-            filepath = "./images/" + random.choice(os.listdir("./images"))
+            # Attempts to load iamges, removing all broken images
+            filepath = "./images/" + choice(listdir("./images"))
             try:
                 img = pygame.image.load(filepath)
                 imageLoaded = True
             except:
-                os.remove(filepath)
+                remove(filepath)
+
+        # Ensures that image meets size constraints and updates while values
         if(img.get_rect().h>=imageSurface.get_rect().h and img.get_rect().w>=imageSurface.get_rect().w):
             image = Image.open(filepath)
             image = image.resize((imageSurface.get_rect().h, imageSurface.get_rect().w))
@@ -279,25 +369,34 @@ def drawEnemy(background, screen, BACKGROUNDCOLOR, imageSurface):
             background.blit(imageSurface, (screen.get_size()[0]//2-imageSurface.get_rect().w//2, screen.get_size()[1]//2 - imageSurface.get_rect().h//2))
             backgroundLoaded = True
             print("loaded background")
+
+        # Removes all broken images
         else:
             imageLoaded = False
-            os.remove(filepath)
+            remove(filepath)
 
-    if len(os.listdir(os.path.join(os.curdir, "images"))) < 50:
+    # Grabs images if there aren't enough
+    if len(listdir(path.join(curdir, "images"))) < 50:
         imageGrabber = Thread(target=get_images, daemon=True)
         imageGrabber.start()
 
 # Makes letter covers for when letters are pressed
 def makeLetterCover(letterNum, background, screen, font):
     letterCover = font.render("—", 9, (180, 180, 180))
+
+    # Makes the letter cover and puts it in position
     letterCoverPos = Rect(screen.get_width()/2-35 + 25 * letterNum, screen.get_height()-82, 30, 40)
     background.blit(letterCover, letterCoverPos)
+
+    # Updates the screen
     screen.blit(background, (0,0))
 
-# Runs functions that happen when a letter is pressed
+# Runs functions that happen when a letter is pressed, sets letter pressed to true and covers it
 def onLetterPress(lettersPressed, letterNum, background, screen, font):
     lettersPressed[letterNum-1] = True
     makeLetterCover(letterNum, background, screen, font)
+
+    # Updates the screen
     pygame.display.flip()
 
 # Runs the Game

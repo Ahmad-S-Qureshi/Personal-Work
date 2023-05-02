@@ -8,10 +8,13 @@ from ship import Ship
 from bullet import Bullet
 from alien import Alien
 from threading import Thread
+import os
+from webscraper import webscraper
 class AlienInvasion:
     #Overall class to manage game assets and behavior
     def __init__(self):
-        #Initialize the game, and create game resources
+        #Initialize the game, and create game resources, also starts running threads
+        
         pygame.init()
         self.settings = Settings()
         # Tell pygame to determine the size of the screen and set the screen width and height based on the players screen size
@@ -27,13 +30,24 @@ class AlienInvasion:
         self.bullets = pygame.sprite.Group()
         # Add in the aliens
         self.aliens = pygame.sprite.Group()
+        self.start_running_threads()
         self._create_fleet()
 
     
-
-    def run_game(self):
+    def start_running_threads(self):
         collisionChecker = Thread(target=self._continuously_check_fleet, daemon=True)
         collisionChecker.start()
+        imageGrabber = webscraper()
+        imageGrabberThread = Thread(target=imageGrabber.get_images, daemon=True)
+        imageGrabberThread.start()
+        while(len(os.listdir(os.path.join(os.curdir, "images"))) < 20):
+            sleep(1)
+    
+    def run_game(self):
+        
+        
+        
+            
         #Start the main loop for the game
         #Start the main loop for the game
         while True:
@@ -124,7 +138,7 @@ class AlienInvasion:
         
 
         # Make a single alien.
-        aliens = Alien(self)
+        aliens = Alien(self, None)
         alien_width, alien_height = aliens.rect.size
         # Determine how much space you have on the screen for aliens
         available_space_x = self.settings.screen_width - (2*alien_width)
@@ -137,11 +151,11 @@ class AlienInvasion:
         # Create the full fleet of aliens
         for row_number in range (number_rows):
             for alien_number in range (number_aliens_x):
-                self._create_alien(alien_number, row_number)
+                 self._create_alien(alien_number, row_number, aliens)
 
-    def _create_alien(self, alien_number, row_number):
+    def _create_alien(self, alien_number, row_number, first_alien):
         # Create an alien and place it in the row.
-        aliens = Alien(self)
+        aliens = Alien(self, first_alien.image)
         alien_width, alien_height = aliens.rect.size
         alien_width = aliens.rect.width
         aliens.x = alien_width + 2 * alien_width * alien_number

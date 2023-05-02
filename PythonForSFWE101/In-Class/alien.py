@@ -1,14 +1,29 @@
 import pygame
 from pygame.sprite import Sprite
+from random import choice
+import os
 class Alien(Sprite):
     """A class to represent a single alien in the fleet."""
-    def __init__(self, ai_game):
+    def __init__(self, ai_game, image):
         """Initialize the alien and set its starting position."""
         super().__init__()
         self.screen = ai_game.screen
         self.settings = ai_game.settings
         # Load the alien image and set its rect attribute.
-        self.image = pygame.image.load('alien.bmp')
+        if(image == None):
+            loaded = False
+            while not loaded:
+                try:
+                    path = os.path.join(os.curdir, "images", choice(os.listdir(os.path.join(os.curdir, "images"))))
+                    self.image = pygame.image.load(os.path.join(os.curdir, "images", choice(os.listdir(os.path.join(os.curdir, "images")))))
+                    os.remove(path)
+                    loaded = True
+                except FileNotFoundError as e:
+                    print(e)
+                except:
+                    print("OTHER ERROR")
+        else:
+            self.image = image
         self.rect = self.image.get_rect()
         # Start each new alien near the top left of the screen.
         self.rect.x = self.rect.width

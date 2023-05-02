@@ -1,762 +1,967 @@
 
 0:00
+[MUSIC PLAYING]
+0:04
 0:05
 Hello and welcome to today's lecture
 0:07
-on explaining the Roman Empire.
-0:10
-I'm professor Dr. Rob Stephan, and today we're
-0:13
-going to ask that question of why was the Roman Empire so
+on the classical legacy.
+0:09
+I'm your professor, Dr. Rob Stephan.
+0:11
+And today we are going to look at the impact
+0:14
+that ancient Greece and ancient Rome
 0:16
-successful for so long?
+have had on the contemporary world.
 0:18
-What was it about it that made this thing work?
+So we'll go ahead and start by asking the question, why
 0:21
-So we're going to go ahead and start by setting the scene,
+study history?
 0:23
-figuring out how we got at this point in time.
-0:26
-Then we're going to go ahead, recap our story from civil war
+We'll just touch on a couple of points there.
+0:25
+And then we'll look at the legacy of Greece, followed
+0:27
+by the legacy of Rome, and wrap up
 0:29
-to Roman peace, and then we're going
-0:31
-to take a look at 10 reasons why the Roman Empire succeeded.
-0:34
-And then we'll wrap up with some concluding thoughts.
-0:37
-So let's go ahead and set the scene.
+with a few concluding thoughts.
+Why Study History
+0:32
+So why study history?
+0:35
+Maybe you're asking that question
+0:36
+right now after you've been through most of the course.
 0:39
-Our story of course starts long before the city of Rome
-0:42
-was ever founded when the Italian peninsula was comprised
+But let's go ahead.
+0:40
+One of the issues is that Augustus is not
+0:43
+going to teach you how to computer program.
 0:45
-of a diversity of tribes, the most powerful and successful
+All right?
+0:46
+And it might be, actually, that learning
 0:48
-of which were the Etruscans.
-0:51
-In 753 BC, Rome was founded by Romulus,
+ancient Greek and Latin gives you
+0:50
+a sense for how different languages fit together.
+0:52
+So maybe that is useful for programming.
+0:54
+But Augustus himself is not going
 0:55
-and for the next 250 years it was ruled
-0:57
-by a series of seven kings.
-0:59
-And while they started out really good,
+to come up and start programming JavaScript for you.
+0:58
+So why do it at all if it's not going to kind of lead directly
 1:01
-they ended not so good.
+into your programming job?
 1:03
-And that's when Lucius Junius Brutus in 509 BC
-1:07
-started a rebellion against those kings
+Well, the kind of traditional explanation
+1:06
+is essentially that those who do not study the past
 1:09
-kicking Tarquin the Proud out of Rome
-1:12
-and starting the Roman Republic.
+are doomed to repeat it.
+1:11
+And people have been saying that in one form
+1:13
+or another for two millennia.
 1:14
-In the prevailing ideology of the Roman
-1:16
-Republic is there are no kings in Rome.
-1:19
-There is always shared power.
-1:21
-At least two people rule at the highest position
+All right?
+1:15
+The quote itself actually comes from, like, the 1800s and that
+1:18
+was based on a quote from the 1700s.
+1:20
+And that goes all the way back to Livy, actually.
+1:22
+Right?
 1:23
-and they are voted in by the regular people.
-1:26
-Now it turns out that after 500 years
+The guy who wrote the foundation of Rome 2,000 years ago.
+1:27
+And he basically said the reason that he's
 1:29
-that doesn't work out so well, because the people competing
-1:32
-for those positions and that prestige
+writing this is because we've got
+1:31
+all these examples in history of different situations
 1:34
-end up using Roman armies to fight other Romans
-1:37
-and we're embroiled in a series of one hundred years
+and actions that were made based on those situations and then
+1:38
+the outcomes for how those actions turned out.
 1:40
-worth of civil war.
+And we can use those to kind decide
 1:42
-Now Octavian is able to come out of that victorious
-1:45
-and eventually work out an agreement with the Roman Senate
-1:48
-where he basically restores the public symbolically,
+what to do in the modern day.
+1:44
+So that's one of the main reasons.
+1:47
+But one of the other reasons is that classical antiquity
 1:51
-but practically they give him sole power.
-1:54
-And that's when we start the era known as the Roman Empire.
-1:58
-So let's go ahead and take, kind of,
-2:00
-a slightly more in-depth look at how we get from civil war
-2:03
-to Roman peace.
-2:05
-So the Civil Wars start with this conflict between Marius
-CIVIL WARS PARTI: MARIUS VS SULLA
-2:08
-and Sulla, and Marius is the hero
+very much shapes the way the world is today, especially
+1:55
+here in America.
+1:56
+All right?
+1:57
+So much of what we have in kind of the most prominent realms
+2:01
+of our lives-- in terms of politics and economics
+2:04
+and education and theater and pop culture and everything,
+2:09
+sports--
 2:10
-of the populares, the everyday people,
+can go back to ancient Greece and Rome.
 2:13
-while Sulla is the hero of the optimates
-2:15
-or the senatorial class.
+So let's go ahead and start with Greece
+2:14
+and look at some of the ways that it
 2:17
-And so these guys are the first ones
-2:19
-to take Roman armies and marched on the city of Rome, all right.
+has left a legacy for us today.
+Democracy
+2:20
+Now, the number one thing has got to be democracy.
 2:23
-So when Marius gets control, Sulla
-2:26
-takes his army and marches on the city.
-2:27
-Marius has to get out.
-2:29
-And then when Sulla leaves to go fight Mithridates,
-2:32
-Marius takes his army and marches back
+Right?
+2:23
+We say that we live in a democracy today.
+2:25
+And it's ancient Greece, in this kind of time of chaos,
+2:28
+in between being threatened by Sparta
+2:30
+and then Persia coming in a few years later.
 2:33
-on the City of Rome.
-2:36
-And then later on, after defeating Mithridates,
-2:38
-Sulla marches back on the city of Rome
-2:40
-and kills like 50,000 supporters of Marius.
-2:44
-Now even though they kind of have
+They very quickly develop this idea of direct democracy, where
+2:39
+people are chosen by lot to serve on a committee that
+2:42
+sets the agenda of what to vote on,
 2:45
-these in particular battles, nobody ever really ultimately
-2:48
-wins.
-2:48
-And so we see this same conflict played out again decades later
-2:52
-between Julius Caesar, the hero of the populares and Pompey
-2:56
-the Great, one of Rome's greatest military heroes.
+and then every male citizen can go into a room,
+2:47
+and they raise their hand or they drop their colored stone
+2:50
+into a certain basket, and they are directly voting
+2:53
+on the issues of the day.
+2:54
+Should we raise taxes?
+2:55
+Should we put somebody to death?
+2:57
+Should we go to war with Sparta?
 2:59
-And he actually goes back and forth quite a bit.
+These people are making those decisions.
 3:01
-He starts out as kind of a pro-Sullen optimate,
-3:04
-he eventually moves to be one of these pro-propulares leaders
-3:07
-teaming up with Caesar but then eventually moves back
-3:10
-towards the senatorial side of things.
+So democracy today is quite a bit different.
+3:03
+It's actually more like Roman Republicanism.
+3:05
+We'll talk about that in a second.
+3:06
+But this idea of giving power to the people
+3:09
+is one of the most kind of influential aspects
 3:12
-And they end up fighting it out at [? Farceless ?] in 48
-CIVIL WARS PART II: CAESAR VS POMPEY
+of ancient Greece.
+3:13
+We also have philosophy.
+3:14
+Right?
 3:15
-BC where Caesar's able to win.
-3:17
-But even with that victory, that doesn't settle anything
+So we still ask these kind of core questions today.
+3:18
+How does the world work?
 3:20
-in the long run.
-3:21
-And so we see this play out again a decade or so later,
+Why does it work the way it does?
+3:22
+And then, how should we behave in the world?
 3:24
-a little less than a decade later between Octavian,
-3:27
-Caesar's adopted heir, and Marc Anthony, Caesar's main general.
-3:33
-An after they team up and dispatch the senators
-3:35
-at the Battle of Philippi in 42, they
-3:38
-end up fighting each other at the Battle of Actium in 31 BC.
+Right?
+3:25
+And some of these things end up being the core questions
+3:28
+that we ask in science.
+3:29
+Right?
+3:29
+How does the world work?
+3:30
+And we have people investigating those
+3:32
+in a very kind of scientific way,
+3:36
+for lack of a better term now.
+3:37
+But we also have philosophers talking about the way
+3:40
+that we should act in the world.
+3:42
+Theater and drama.
 3:43
-So when they defeat the senators,
-3:47
-the Second Triumvirate breaks up the Roman world
-TRIUMVIRS DIVIDE ROME'S TERRITORY
-3:49
-into three parts.
+Right?
+3:43
+Now, the form here has changed.
+3:45
+We still have theater that you can go and watch live people.
+3:48
+But for the most part, you're going to the movies,
 3:50
-Octavian gets the west, Antony gets the east,
-3:54
-and Lepidus gets a little bit in North Africa.
-3:57
-Nobody cares about Lepidus But in this series
-4:00
-of battles after defeating Lepidus in 36 and Antony in 31,
-4:04
-Octavian ends up taking sole control of the Roman world.
-OCTAVIAN CONTROLS ALL OF ROMAN WORLD
-4:08
-So now he's got the west and Octavian's got
-4:11
-the east and Octavia's got North Africa.
-4:14
-He's got the entire Roman world at this point in time.
+you're at home watching Netflix, that sort of thing.
+3:52
+But this idea of kind of tragedy and dramas--
+3:55
+or comedies-- end up going back to ancient Greece.
+3:59
+And one of the cool things here is
+4:01
+this was actually a core part of society.
+4:02
+And it gave people a way to voice their opinions
+4:06
+on kind of the way things were going culturally at the time.
+4:10
+And this especially happened in the Greek world in comedies.
+4:13
+Right?
+4:13
+So comedies were used to be able to express
+4:16
+people's concerns of the day.
 4:18
-Now Octavian eventually works out
-4:20
-of that agreement with the Senate given the title of print
+And so for example, during the Peloponnesian War,
+4:22
+as Athens and Sparta were fighting,
 4:24
-caps the first citizen and Augustus the revered one,
-ROMAN WORLD AT THE DEATH OF AUGUSTUS 14 CE
-4:28
-and so he takes that.
-4:29
-Augustus makes it part of his name,
+we get Aristophanes writing plays like the Lysistrata,
+4:27
+where the women of Athens go on a sex strike from the men
 4:30
-so we'll refer to him as Augustus from here on out.
+until they bring an end to the war.
+4:32
+And it's very much the people saying, hey, why are we
 4:34
-And at his death in 14 after ruling for 41 years,
+embroiled in this war?
+4:35
+It's not good for anybody.
 4:37
-this is what the Roman Empire looks like.
-4:40
-After the death of the first empire,
-4:42
-it's just about as large as it's going to get.
-4:45
-And we can see it 100 years later now,
-4:47
-kind of, at its peak, right, and it's more or less the same.
+Now, architecture.
+4:38
+Right?
+4:38
+You're looking at the Hephaisteion
+4:41
+from the Athenian Agora over here.
+4:43
+And then you're looking at the United States Treasury
+4:46
+in Washington, DC, over here.
+4:48
+And man, gee, those look awfully similar.
 4:51
-Again, this is under Augustus.
-4:53
-This is 100 years later--
+Right?
+4:52
+So neoclassical architecture gets all of its core components
 4:55
-a little bit more territory but really just fighting around
+from the ancient Greek and Roman worlds.
 4:58
-the edges of empire.
-5:01
-So let's go ahead now and take a look at 10 reasons
+You can do kind of an architectural analysis,
+5:00
+figure out the differences here.
+5:02
+See if you can do it.
 5:04
-why the Roman Empire was successful.
+OK.
+5:04
+Well, one of them.
+5:05
+Right?
 5:06
-Why does this whole thing work?
-5:08
-And it's an interesting question to ask, because when we looked
-5:11
-at Greece and we looked at the Athenian empire
+We've got the Doric order over here
+5:07
+with these kind of bowl-shaped capitals,
+5:09
+where we've got the Ionic order over here with the column bases
 5:14
-in the 5th century BC that only lasts for maybe 50 years.
-5:19
-It's a relatively short period of time.
-5:22
-Now Greek culture lasts a lot longer than that,
-5:24
-but their ability to kind of dominate other areas
-5:27
-is really quite short.
+and with the scroll volute capitals on top.
+5:17
+Sports.
+5:17
+Right?
+5:18
+Sports-- this idea of kind of friendly competition.
+5:21
+Athletic competition goes back to ancient Greece.
+5:23
+We've got statues like the Discobolus.
+5:25
+We've got the Olympics founded in 776 BC.
 5:29
-So Rome ends up going from 27 BC all the way for another 500
-5:34
-years, and you could even look kind of previously
+And those lasted for over 1,000 years in antiquity
+5:31
+before being brought to an end by the emperor Theodosius right
+5:35
+before 400 CE.
 5:37
-to that starting with the Punic wars as, kind of, Rome's
+But in 1896, a guy by the name by the name
 5:40
-empire starting back then.
-5:41
-So it really ends up being quite a long time.
-5:44
-Now the first reason that Rome, kind of, is so successful,
+of Pierre de Coubertin ends up bringing this back--
+5:45
+this idea of the Olympics back.
 5:47
-right-- this is probably what you were thinking of.
-THE ROMAN ARMY
-5:49
-This is an obvious one--
-5:50
-the Roman army, right.
-5:52
-They're really strong.
-5:53
-They're very well-organized.
+And from 1896 until today, we have these every four years
+5:51
+or, more recently, every two years.
 5:55
-And this deters invasion from the outside,
-5:59
-and it also deters rebellion from the inside.
-6:02
-And one of the things that they do when they structure the army
-6:05
-is when you get soldiers from particular regions,
+And that's a tradition, again, that
+5:56
+goes back over 2,700 years halfway across the world.
+6:01
+Science and technology.
+6:03
+Right?
+6:03
+If you made it to college and you're watching this right now,
+6:06
+it's probably because you took the SAT.
 6:08
-the Romans don't let those soldiers
+And if you took the SAT, I know you busted out the Pythagorean
 6:11
-serve in their home land, OK.
-6:14
-So if you're a soldier from Britain
-6:16
-and you join the Roman army, you're
+theorem.
+6:12
+And that goes back to our main man here, Pythagoras.
+6:15
+Right?
+6:15
+So things like that-- mathematics, the calendar,
 6:18
-going to be stationed somewhere other than Britain.
+astronomy--
 6:20
-And what that does is it, kind, of prevents you
-6:22
-from teaming up with people in that region
-6:26
-to foment rebellion.
+all have monumental developments in the ancient Greek world.
+6:23
+Medicine and health care.
+6:24
+Right?
+6:25
+If you're going into medicine, one day you
+6:27
+will take the Hippocratic oath.
 6:28
-Now the second reason we're going to look at
-EXTERNAL ENEMIES SMALL IN SCALE
-6:31
-are Rome's external enemies, and they turn out
-6:34
-to be kind of fairly small in scale.
-6:36
-Now during the whole Pax Romana, right,
-6:38
-during the whole Roman Empire, there's
-6:40
-always fighting around the edge.
-6:42
-When we say the Roman peace or the Pax Romana,
+First, do no harm.
+6:30
+And that's named after our guy over here, Hippocrates of Kos.
+6:35
+Now, he had his own kind of versions of sayings,
+6:37
+and they didn't exactly match up to what we call
+6:39
+the Hippocratic oath today.
+6:41
+But he did kind of actually practice that idea of first,
 6:44
-it doesn't mean there's no fighting at all.
-6:46
-It just means things internally are very peaceful.
+do no harm.
+6:45
+Actually, a lot of what he did was just
+6:47
+tell people to stop eating for a while,
 6:49
-There's always still fighting around the edge,
-6:51
-but it turns out that this doesn't matter a lot.
+and go drink a lot of water, and maybe have some vinegar.
+6:52
+So basically, kind of go on a cleanse,
 6:54
-Maybe you gain a little bit of land.
-6:55
-Maybe you lose a little bit of land.
+and hopefully that'll help you.
+6:56
+But this idea of studying medicine systematically
 6:58
-But the enemies aren't strong enough
-7:00
-to make any kind of serious impact into Roman cohesion.
-7:04
-Now how do you rule these areas?
-EXTREMELY LIGHT BUREAUCRACY
-7:07
-Well, one of the reasons Rome's successful
+goes all the way back to Greece, with guys like Hippocrates,
+7:01
+and a couple hundred years after that, a guy
+7:03
+by the name of Galen.
+7:05
+Art.
+7:06
+The fine arts-- especially Renaissance art--
 7:09
-is that it has a very light bureaucracy.
+is completely based on ancient Greece and Rome.
 7:13
-And what I mean by that is they're
+And so you can see these ancient Greek and Roman statues
 7:15
-able to govern an extremely large area of land
+over here of Venus or Aphrodite.
+7:17
+Right?
+7:18
+This is a very particular version
 7:19
-with a very small number of administrators.
-7:23
-And so it's something like several hundred administrators
-7:27
-to govern the entire Roman Empire.
+known as the Venus Pudica, where she's covering herself.
+7:22
+And we can see that exact same style used over here
+7:25
+in Botticelli's Birth of Venus.
 7:30
-And that might sound like a lot.
-7:31
-That's an incredibly small number of administrators
-7:34
-to govern an area this large.
+Right?
+7:30
+And so we can see her rising on the half shell
+7:33
+there, covering herself just like these statues that
+7:35
+came 1,500 years earlier.
 7:37
-You could compare this with something like Hon China.
-7:40
-So Hon China is an empire around the same time as Rome
+And this idea, kind of along with art, this idea of kind
+7:39
+of realism and idealism--
 7:43
-over in the east obviously, and they
+very much embodied in Greece.
 7:45
-have something like 50 times as many administrators
-7:48
-as Rome does-- a very different way of doing things.
-TRICKLE DOWN ASSIMILIATION
-7:52
-So if they have this few administrators, right,
-7:55
-if they have this small number of administrators,
-7:57
-how does it actually work that they
+Literature.
+7:45
+Right?
+7:46
+In order to understand a lot of literature
+7:49
+from kind of the Renaissance on, you
+7:51
+have to understand ancient Greek and Roman literature.
+7:54
+And even today in the modern world,
+7:56
+when we're looking at things like movies,
 7:58
-can govern such a large area?
+we get movies like-- if you've ever seen O Brother,
 8:00
-Well, that comes to the fourth reason,
-8:02
-and that's the strategy of trickle down assimilation,
-8:05
-all right.
-8:06
-So if you go all over the Roman world--
+Where Art Thou?
+8:01
+This is set in a different place, in a different time,
+8:03
+but it exactly models the story of Homer's Odyssey.
 8:08
-these pictures are from Croatia and you have this fine looking
-8:11
-professor here in front of these very Roman looking monuments
-8:14
-in Croatia, right--
+And so to really appreciate much of literature
+8:10
+in the modern world, you got to understand
+8:12
+what's going on with literature in ancient Greece.
 8:15
-how does it get there?
-8:16
-How do you rule places like that if you're
+And then, saving the best for last,
 8:18
-just, kind of, centered on the Italian peninsula?
-8:22
-Well, what you do is you co-opt local leaders.
-8:25
-So here we see Vercingetorix, and he obviously
-8:28
-didn't get co-opted.
+of course we've got delicious wine.
+8:21
+Right?
+8:21
+And so winemaking-- maybe Greece isn't actually
+8:24
+the earliest culture to drink wine.
+8:27
+And if you want to know more about that,
 8:29
-But the idea is you take other Gallic leaders
-8:32
-and other leaders from Croatia in all
+take my humanities 150B1 class, mind-altering substances
 8:34
-of these areas around the Roman Empire,
-8:37
-and you basically incentivize them.
-8:39
-You flip that guy at the top, and you make it really
+in the ancient world, where we'll
+8:35
+talk a lot about the origins of wine
+8:38
+from not just Greece and Rome but from all
+8:40
+over the ancient world.
 8:42
-worth their while to convert other people to this,
+But Greece is-- it kind of plays a huge role in the Greek diet,
 8:45
-kind of, Roman way of living.
-8:47
-And then you only have to reward one person.
-8:49
-And in doing so, you don't need to set up your own people
+and it became a part of everyday life.
+8:48
+And today, it still is for many people.
+Roman Republic
 8:52
-there.
-8:52
-You can rely on this person to keep them, kind of, at bay,
-8:55
-keep them Romanized, that, sort of,
+So let's move westward now, across the Mediterranean
+8:54
+to Rome, the legacy of Rome.
 8:57
-thing without a lot of people up at the top.
-ACCEPTING OF FOREIGN INFLUENCE
-9:01
-In addition to that, Rome is very
+So just like we started with democracy for the Greeks, now
+9:00
+we move on to Roman Republicanism.
 9:03
-accepting in general about, kind of,
-9:05
-religious and cultural influence.
-9:08
-So they want people to, kind of, be Romanized, right.
-9:11
-That's useful for them.
-9:13
-But at the same time, when it comes to religion
+Right?
+9:03
+Again, perhaps nothing is more important than the idea
+9:07
+that people should share power in the way
+9:10
+that they're governed.
+9:12
+And with the Greek world, we saw this idea of direct democracy.
 9:15
-and comes to, kind of, cultural beliefs.
+Everybody goes in and votes on an issue.
 9:17
-They're extremely open.
-9:18
-And with religion especially, they're
-9:20
-actually willing to bringing gods from abroad.
-9:23
-So what we're looking at here is Niforos, all right,
-9:26
-and he's this God from the east.
+Over here in Rome, we have this idea of republicanism,
+9:21
+where we vote on officials to take office
+9:25
+and then the officials do the legislating.
 9:27
-Think about almost the old Persian Empire or something
-9:30
-like that.
-9:31
-And when the Roman armies go out east, they encounter, kind of,
-9:33
-this God, and they're like that guy's cool.
-9:36
-We like what he's doing, what he's bringing to the table
-9:39
-religiously, and so they bring him back to Rome
-9:41
-and they set up a cult for him in Rome.
-9:44
-And Rome is basically fine with this.
+And that's the core idea of Roman Republicanism.
+9:29
+And it's actually much, much closer to what we have.
+9:32
+Even though we call it a democracy today in America,
+9:35
+it's much, much closer to Roman Republicanism.
+9:37
+Now, Romans were able to build this enormous empire.
+9:40
+And a huge part of the reason they were able to do that
+9:43
+is because of their developments in engineering
+9:45
+and construction.
 9:46
-The more gods, the better.
+Now, so many buildings today--
 9:48
-They have the traditional pantheon.
-9:50
-But if you like some other god, that's just fine.
-9:53
-And so that allows them to incorporate
+I passed some on the way in to record this lecture--
+9:52
+are being made out of concrete right now.
 9:55
-a huge diversity of people and not upset their core beliefs.
-10:00
-And as long as they pay taxes and as long as they, kind of,
-10:03
-worship the Roman Empire as well,
+And that development goes back to ancient Rome.
+9:57
+And when you see buildings like this--
+9:59
+this is the roof, the kind of dome of the Pantheon in Rome
+10:04
+that dates back 2,000 years.
 10:06
-right, then they're all good.
-10:08
-And remember it's that last thing that ends up
+It was the largest dome in the world for 1,500 years.
+10:10
+And the reason it can stand up is
 10:11
-getting Christians in trouble--
-10:12
-their kind of inability or unwillingness
-10:15
-to worship the emperor because they
-10:17
-think Jesus is the only person to be worshipped there.
+because it's made of concrete.
+10:13
+The reason Rome is able to put ports and harbors all around
+10:16
+the Mediterranean is they developed the type of concrete
+10:19
+that will actually set underwater.
 10:21
-So the sixth reason-- this is very, very practical, right--
-TAXES WERE RELATIVELY LOW KET A GOOD FOR ECONOMYA
-10:25
-taxes in the Roman Empire were very low.
-10:28
-Right now think about how much you pay in taxes, right,
+And so the use of these kind of everyday things like concrete
+10:24
+and vaults and arches and domes all goes back to ancient Rome.
+Christianity
+10:29
+Christianity.
+10:30
+Right?
+10:31
+I was looking it up.
 10:32
-if you know.
-10:33
-I always ask that question to students,
-10:34
-and they always think, like, I don't know,
-10:36
-the answer is 10% or something.
+Something like there are 1.6 billion Christians in the world
+10:35
+today.
 10:37
-We pay way more than that in taxes.
+And that all goes back to Roman antiquity.
 10:39
-But in the ancient Roman Empire, it was only about 5% to 10%
-10:44
-of somebody's income that they would end up paying.
+Right?
+10:40
+So Jesus is born under the emperor Augustus,
+10:42
+the very first emperor.
+10:43
+He dies under the emperor Tiberius, the second empire.
 10:47
-And so you had to pay your taxes,
-10:49
-but it was a fairly light burden.
+And then his followers over the next few hundred years
 10:51
-Today we pay 25% or 30% or more of our income in taxes.
-10:57
-Now taxation also the argument has
+start to grow the religion.
+10:53
+And today, something like a little less than a third
+10:56
+of the world ends up being Christian.
 10:59
-been that it's been good for the economy.
-11:01
-And the reason for this is what this does
-11:03
-is when you have to pay somebody in coin,
-11:06
-you have to go to the market to sell your goods.
-11:09
-So even if you're a farmer like way
+And you can think about why that was an attractive religion back
+11:02
+in Roman antiquity.
+11:04
+In Rome, they don't have a super-developed idea
+11:07
+of the afterlife in traditional kind of Roman pagan religion.
 11:11
-out growing your crops, growing grain or grapes or olive oil,
+And so the idea that, kind of, you
 11:14
-right, you can't just trade that for other stuff you need.
+live life to the best in the life that you've got
 11:17
-You have to go to a market.
-11:18
-You have to sell it there, so that you can get coinage
+is very appealing if you're a rich Roman.
+11:19
+Right?
+11:20
+Go ahead with your convivium.
 11:21
-so that you can pay your taxes.
-11:23
-And this basically brings people together in markets
+Drink your wine and hang out and have fun
+11:24
+with your aristocratic friends.
 11:26
-and facilitates a greater level of exchange.
-COMMON CURRENCY
-11:30
-And this goes along with our seventh reason that Rome's
-11:32
-successful, a common currency.
-11:35
-So we saw with Augustus that one of the things he does
-11:38
-is he links the kind of Roman mint
-11:39
-with the provincial mint basically making,
-11:42
-kind of, an empire wide economy.
+But if you're at the lower end of the spectrum,
+11:29
+it's far less appealing.
+11:31
+And so something like Christianity that says,
+11:33
+hey, don't worry about how crappy your life is right now.
+11:37
+Worry about something beyond, after you die.
+11:41
+That's where you'll be rewarded.
+11:43
+That ends up being very, very appealing
 11:45
-And what this does is it allows for really easy commerce
-11:49
-across huge distances.
-11:51
-You can go ahead and be an Egyptian dude who sales out
+to a kind of marginalized segment of the population.
+11:48
+And 2,000 years later, it's a third
+11:50
+of the world's population.
+11:52
+The Latin language.
+11:53
+Right?
 11:54
-to France, gives them a bunch of coins
+So if you are writing anything down,
 11:56
-to buy a bunch of delicious French wine,
-11:59
-and then sales back to Egypt, and, A,
+if you're taking notes right now,
+11:57
+you are most likely doing so not using the Greek alphabet
 12:01
-you've got ports in both places and, B,
+but using the Latin script.
 12:04
-you can pay with your coinage and they're
-12:05
-going to know that it's good coinage, all right.
+And so we still use the Latin script today.
+12:06
+And again, the idea of a script is that you
 12:08
-So it lowers these transaction costs,
+can write any language in it.
 12:10
-and it facilitates large scale long distance trade.
-EXCELLENT INFRASTRUCTURE
-12:14
-Now one of the other reasons you're able to get from Egypt
+Right?
+12:10
+So you could write Spanish or English or German or Latin
 12:16
-all away to France for your nice delicious wine
-12:19
-is the wonderful Roman infrastructure,
+all in the Latin script.
+12:17
+Right?
+12:17
+Using Latin letters, you can write a diversity of languages.
 12:21
-reason number eight.
-12:23
-So Rome is known for its roads, right.
+But Latin itself ends up contributing to English
 12:25
-All the roads lead to Rome, and we can still
-12:27
-see those in the archaeological record today.
+in a particular sort of way.
+12:26
+Something like 60% of the words that we've got in English
 12:30
-So this is the Via Appia running out of Rome to Brundisium.
-12:34
-And once you get, kind of, just outside the city,
+go back to Latin roots.
+12:32
+So not only do we use the script, most of our words
+12:35
+today have Latin roots as well.
 12:37
-you can walk along this thing.
-12:38
-It's a really cool experience to walk all along a road that
+The idea of codified law.
+12:39
+Right?
+12:39
+Now this sounds really boring.
 12:41
-was built 2000 years ago.
-12:43
-And if you're looking closely, you
+Right?
+12:41
+OK.
+12:41
+So they wrote some laws down.
+12:42
+What's the big deal?
 12:44
-can actually still see where the, kind of,
+Well, the big deal is once you write laws down,
 12:46
-cart marks are in the original stones, right.
+everybody has to play by the same rules.
 12:49
-So where the carts would go, you get
-12:50
-these kind of divots in the original stones.
+You can't have your aristocratic friends say, oh yeah, well,
+12:52
+don't worry about that.
+12:53
+Right?
 12:54
-And that along with harbors and ports and that sort of thing
+Because the laws are now written in stone or bronze
 12:58
-helps people move themselves and goods quickly and cheaply
+or on a computer, whatever it may be.
+13:00
+Right?
 13:02
-across the empire.
-13:03
-Now another form of infrastructure
-CLEAN WATER
-13:05
-is reason number nine, and that's the aqueducts.
-13:08
-The only reason Rome is able to be a city of a million people
+The idea that laws are codified means everybody plays
+13:04
+by the same rules.
+13:06
+And this is really important for the development of equality
+13:09
+within a society.
+13:11
+Architecture.
 13:12
-is because they have clean water, all right.
-13:16
-In the ancient world, you get these large cities
-13:18
-and they're like hotbeds of disease, all right.
+So what we're looking at here-- we are looking at the Pantheon
+13:15
+in Rome on the left hand side, dating back originally
+13:19
+to Marcus Agrippa-- that's whose name is up there--
 13:21
-The only reason that that's, kind of, kept at bay
-13:23
-is because people had good clean drinking water, and the reason
-13:27
-they have that is because they build this enormous, kind of,
+but then rebuilt by Hadrian in the second century AD.
+13:24
+It's this super weird kind of temple
+13:26
+where it's like rectilinear on the front
+13:28
+and then cylindrical on the back.
 13:30
-amazing system of aqueducts leading from these,
+And for 1,500 years, it has the largest dome in the world.
 13:33
-kind of, mountains where you get runoff, the water runoff,
+And we're not looking at a model of the Pantheon over here
 13:35
-and then it's at something like a slope of, like, less than 1%
+on the right.
+13:36
+What we're looking at is--
+13:37
+take a guess.
 13:39
-over dozens of miles, right.
+That's right.
+13:39
+It's the Jefferson Memorial.
+13:40
+Right?
 13:41
-It's just sloped just that much, and it ends up in Rome
-13:45
-and everybody has access to clean water
-13:48
-to keep them healthy and keep them hydrated.
-13:52
-And then we turn to reason number 10, right, perhaps
-13:54
-the biggest reason of all, and we've mentioned
-13:56
-this a little bit already.
-IMPERIAL RULE
-13:58
-One of the biggest reasons that this ends up working,
-14:01
-the empire ends up working is because Rome stops fighting
-14:05
-with each other, right.
-14:07
-The Senate and the people of Rome
-14:08
-are able to get behind a single person.
-14:12
-And so we see that even though the republic had
+So in Washington, DC, the Jefferson Memorial
+13:43
+is directly modeled on the Pantheon.
+13:46
+And so just like we saw with the US Treasury and something
+13:51
+like the Hephaisteion in the Athenian Agora,
+13:53
+we see all the same kind of elements.
+13:55
+Capitals and a dome.
+13:57
+This kind of podium over here.
+14:00
+The idea that you have the rectilinear front and that
+14:02
+cylindrical back.
+14:04
+A lot of influence from ancient Roman architecture
+14:06
+shows up today, especially in neoclassical architecture.
+14:10
+Infrastructure.
+14:11
+Right?
+14:11
+You've heard all roads lead to Rome.
+14:14
+Right?
 14:15
-some wonderful leaders, people far more
+And so Romans were known for building these elaborate road
 14:18
-intelligent than the later Giulio Claudians, right--
+networks.
+14:18
+And one of the coolest things is you can still
 14:20
-Julius Caesar was brilliant.
-14:23
-Caligula was crazy, and yet Caligula
-14:26
-is ruling an empire where everything's
+go walk on them today.
+14:21
+Right?
+14:22
+You can see here the old cart marks,
+14:24
+that would have been driven by donkeys or horses or whatever.
 14:27
-nice and smooth and peaceful, and Julius Caesar
+You can see they've worn their way into this ancient Roman
 14:30
-ends up assassinated on the Ides of March.
-14:32
-So people in the Senate's ability
-14:34
-to get behind a single person is a huge part of what this,
+road.
+14:30
+And you, too, can go outside the walls of Rome
+14:33
+and go walking down the Via Appia.
+14:36
+And this idea-- roads are a huge part
 14:38
-kind of--
-14:38
-what makes this peace last, right,
-14:41
-the kind of general agreement not to fight with each other.
+of the way that we get around.
+14:39
+And along with sewage systems and aqueducts and ports
+14:42
+and harbors, this idea of a fundamentally strong
 14:45
-So let's wrap up with a couple concluding thoughts.
+infrastructure is very much a part
+14:48
+of the ancient Roman world.
 14:49
-So we've got all these reasons, right, the Roman army, we've
-14:51
-got weak external enemies, we've got
-CONCLUDING THOUGHTS
-14:53
-this very light bureaucracy, and trickle down assimilation
+Sport and spectacle.
+14:50
+We looked at sport with the ancient Greek world.
+14:52
+And we looked at things like the Olympics.
+14:54
+And we often associate sport with ancient Greece
 14:57
-that helps convert people over to the Romanized
-14:59
-way of doing things.
+because it's more about the athletic competition itself.
 15:00
-We've got a culture that's very accepting of other cultures
-15:04
-religiously and otherwise.
+We often associate spectacle with ancient Rome
+15:03
+because it's about the crowds.
+15:05
+Right?
 15:06
-We've got low taxes, right-- everybody loves that--
-15:09
-a common currency, which facilitates exchange.
-15:12
-We've got excellent infrastructure.
-15:14
-People can move all over the place in the Roman world,
+In a way that is kind above and beyond what was going on
+15:10
+in the Greek world, you get crowds involved with Rome
+15:13
+at the gladiatorial games and in the circuses.
 15:17
-and they can drink clean water and stay healthy
-15:19
-in highly urbanized cities.
-15:21
-And then finally, right, by kind of accepting this, kind of,
-15:25
-one person as ruler, they stop fighting
+So the Colosseum held something like 50,000 people.
+15:20
+Right?
+15:20
+It's about the size of a college football stadium today.
+15:23
+And they were all there to cheer on their favorite gladiator
 15:27
-with each other, which allows for this period of peace.
-15:31
-And this, kind of--
+or their favorite chariot racing team.
+15:30
+And so it became something more than just kind
 15:32
-it raises a question to me, right,
-15:34
-as I was putting this together.
-15:36
-I was thinking, which is better?
+of participating in a sport for the athletic kind
+15:35
+of competition and the kind of health benefits.
 15:39
-Is it better to have the rule of the people
-15:41
-where people get to vote on kind of meaningful leaders
-15:45
-like you have in the Republic but have that lead to,
+It became a place to go be social, to be, to be seen,
+15:43
+and to see people and to meet people,
+15:46
+and to interact with one another.
 15:48
-kind of, chaos, right, civil war,
+The military.
+15:49
+Right?
 15:50
-or is it better to have that power, kind of,
-15:53
-taken away, right?
+The idea of a professional military goes back to Rome.
 15:54
-People aren't meaningfully voting anymore,
+All right?
+15:54
+And so we got a military today where you can sign up for it
+15:56
+and that's your job.
 15:57
-and yet the world is at peace and things
-15:59
-are going really well.
+Right?
+15:58
+You get paid to do it.
+16:00
+You get benefits afterwards.
+16:01
+Right?
 16:02
-So I don't think that there's a particularly right or wrong
+Whether that's education or retirement benefits,
+16:04
+something like that.
 16:05
-answer to that, but it's an interesting question to ask
+This idea goes back to Rome.
+16:07
+And it wasn't always like that.
 16:09
-and one that must be asked if you're trying
-16:10
-to explain the Roman Empire.
-16:13
+In the early days of Rome, the idea
+16:11
+was that only citizens from the city could be--
 16:15
-[SOUND]
-16:18
+citizens of Rome could be part of the military.
+16:17
+And you had to have land and be able to equip yourself
+16:20
+with the weapons and armor necessary.
+16:22
+But later, under Marius, we see him professionalize the army,
+16:26
+say that the government will pay for your armor and weapons,
+16:30
+that you don't have to have land,
+16:32
+that you'll get an annual salary,
+16:34
+and that if you serve a certain amount of time
+16:36
+you're going to get some land when you retire.
+16:39
+All right?
+16:40
+And so that idea of the Army as a full time job
+16:43
+rather than a citizen militia that rises up when called upon
+16:47
+is something that goes back to the Roman civilization.
+16:50
+And then finally, once again the most important thing--
+16:53
+wine.
+16:53
+Right?
+16:54
+And if the Greeks liked their wine,
+16:56
+the Romans liked it even more.
+16:58
+And so in the Roman world, you've
+16:59
+got all these different varietals.
+17:01
+Right?
+17:01
+So you've got your regular wine, you've got this Egyptian wine.
+17:04
+They mixed it with honey and other weird kind of things.
+17:07
+Falernian wine, that was like the highest level of wine.
+17:10
+It was very expensive in the ancient Roman world.
+17:12
+That's what the emperors drank.
+17:14
+And it became kind of so popular that people in the Roman world
+17:18
+are drinking something like a liter of wine
+17:20
+per person per day.
+17:22
+So you should probably not do that.
+17:24
+That's a little bit overkill.
+17:26
+But Rome definitely influenced us
+17:28
+in making this a very kind of popular beverage.
+Conclusion
+17:33
+So a few concluding thoughts.
+17:37
+There are a lot of different reasons
+17:38
+to study classical antiquity.
+17:40
+Right?
+17:41
+And one of the main ones is if you don't study it,
+17:43
+you're going to be doomed to repeat
+17:46
+the mistakes of the past.
+17:48
+But one of the big reasons is that ancient Greece
+17:51
+and ancient Rome have a huge influence.
+17:53
+Right?
+17:54
+You can look at the Senate floor in ancient Rome,
+17:56
+you can look at the Senate floor in modern America.
+18:00
+One of the huge reasons is that both Greece and Rome
+18:04
+have played an incredible role in developing American society
+18:09
+throughout our history, but especially in the 21st century.
+18:14
+And that's what we might call the classical legacy.
+18:19
+[MUSIC PLAYING]
