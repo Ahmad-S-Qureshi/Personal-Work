@@ -1,0 +1,58 @@
+#! /usr/local/bin/vvp
+:ivl_version "13.0 (devel)" "(s20221226-126-gb210eb826)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x55fab4490c30 .scope module, "tb" "tb" 2 3;
+ .timescale 0 0;
+v0x55fab44a1470_0 .var "A", 0 0;
+v0x55fab44a1540_0 .var "B", 0 0;
+v0x55fab44a1610_0 .net "out", 0 0, L_0x55fab44a1710;  1 drivers
+S_0x55fab4490dc0 .scope module, "dut" "and_gate" 2 11, 3 3 0, S_0x55fab4490c30;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "out";
+    .port_info 1 /INPUT 1 "a";
+    .port_info 2 /INPUT 1 "b";
+L_0x55fab44a1710 .functor AND 1, v0x55fab44a1470_0, v0x55fab44a1540_0, C4<1>, C4<1>;
+v0x55fab447d3f0_0 .net "a", 0 0, v0x55fab44a1470_0;  1 drivers
+v0x55fab44a1290_0 .net "b", 0 0, v0x55fab44a1540_0;  1 drivers
+v0x55fab44a1350_0 .net "out", 0 0, L_0x55fab44a1710;  alias, 1 drivers
+    .scope S_0x55fab4490c30;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fab44a1470_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fab44a1540_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 19 "$display", "A=%b B=%b Output=%b", v0x55fab44a1470_0, v0x55fab44a1540_0, v0x55fab44a1610_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fab44a1470_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fab44a1540_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 23 "$display", "A=%b B=%b Output=%b", v0x55fab44a1470_0, v0x55fab44a1540_0, v0x55fab44a1610_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fab44a1470_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fab44a1540_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 27 "$display", "A=%b B=%b Output=%b", v0x55fab44a1470_0, v0x55fab44a1540_0, v0x55fab44a1610_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fab44a1470_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fab44a1540_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 31 "$display", "A=%b B=%b Output=%b", v0x55fab44a1470_0, v0x55fab44a1540_0, v0x55fab44a1610_0 {0 0 0};
+    %vpi_call 2 33 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb.v";
+    "dut.v";

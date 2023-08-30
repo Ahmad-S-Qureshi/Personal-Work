@@ -16,7 +16,6 @@ class Alien(Sprite):
                 try:
                     path = os.path.join(os.curdir, "images", choice(os.listdir(os.path.join(os.curdir, "images"))))
                     self.image = pygame.image.load(os.path.join(os.curdir, "images", choice(os.listdir(os.path.join(os.curdir, "images")))))
-                    os.remove(path)
                     loaded = True
                 except FileNotFoundError as e:
                     print(e)

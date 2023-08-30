@@ -3,6 +3,7 @@ import asyncio
 import socket
 import os
 import sys
+from random import randint
 
 #sys.stderr = open(os.devnull, "w")
 
@@ -30,10 +31,7 @@ print("Server listening on Port " + str(PORT))
 
 
 # A set of connected ws clients
-connected = set()
-
-global playerOneTurn
-playerOneTurn = None
+connected = []
 
 # The main behavior function for this server
 async def echo(websocket, path):
@@ -41,7 +39,6 @@ async def echo(websocket, path):
     await websocket.send("Successfully connected!")
     # Store a copy of the connected client
     # Handle incoming messages
-    usableInputs = ["rock", "paper", "scissors"]
     global playerOneTurn
     try:
         async for message in websocket:
@@ -53,59 +50,47 @@ async def echo(websocket, path):
                     search_for_player(connected, name)
                     await websocket.send("Name already in use, try a different name")
                 except NameError as e:
-                    connected.append([websocket, name])
+                    connected.append([websocket, name, str(randint(400, 900)) +', '+str(randint(400,900))])
                     print(f"stored player {name}")
                     print("sending welcome message")
                     await websocket.send(f"Welcome {name}!")
             
-            elif(message not in usableInputs):
-                await websocket.send("Invalid Input")
+            elif (message[0:3] == 'Pos'):
+                positions = []
+                for connection in connected:
+                    position = []
+                    for token in connection[2].strip()[1:-1].split(', '):
+                        position.append((int)(token))
+                    position.append(connection[0])
+                    positions.append(position)
+
                 
-            else:
-                print("Sending Valid")
-                await websocket.send("Valid Input")
-                if(playerOneTurn == None):
-                    print("Sending Valid")
-                    playerOneTurn = message
-                    await websocket.send("Player 1 move submitted, waiting for player 2")
-                else:
-                    print(message)
-                    if(playerOneTurn == "rock"):
-                        if message == "paper":
-                            for conn in connected:
-                                await conn.send("Player 2 wins!")
-                        elif message == "scissors":
-                            for conn in connected:
-                                await conn.send("Player 1 wins!")
-                        else:
-                            for conn in connected:
-                                await conn.send("Tie Game!")
-                    elif(playerOneTurn == "paper"):
-                        if message == "scissors":
-                            for conn in connected:
-                                await conn.send("Player 2 wins!")
-                        elif message == "rock":
-                            for conn in connected:
-                                await conn.send("Player 1 wins!")
-                        else:
-                            for conn in connected:
-                                await conn.send("Tie Game!")
-                    elif(playerOneTurn == "scissors"):
-                        if message == "rock":
-                            for conn in connected:
-                                await conn.send("Player 2 wins!")
-                        elif message == "paper":
-                            for conn in connected:
-                                await conn.send("Player 1 wins!")
-                        else:
-                            for conn in connected:
-                                await conn.send("Tie Game!")
-                    playerOneTurn = None
+                    if connection[0] == websocket:
+                        connection[2] = message[4:]
+                for position in range(0, len(positions)):
+                    for position2 in range(position+1, len(positions)):
+                        print('comparing positions')
+                        if abs(positions[position][0]-positions[position2][0]) <= 10 and abs(positions[position][1]-positions[position2][1])<=10 and position!=position2:
+                            print('position match, removing one player')
+                            if randint(0,1) == 1:
+                                await positions[position][2].close()
+                            else:
+                                await positions[position2][2].close()
+
+                print(positions)
+
+                position_message = ''
+                for connection in connected:
+                    position_message += connection[2]
+                await websocket.send(position_message)
+                
         # Handle disconnecting clients 
     except websockets.exceptions.ConnectionClosed as e:
         print("A client just disconnected")
     finally:
-        connected.remove(websocket)
+        for connection in connected:
+            if connection[0] == websocket:
+                connected.remove(connection)
 
 # Start the server
 IP = get_ip()
